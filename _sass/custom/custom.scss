@@ -1,0 +1,41 @@
+@import "minimal-mistakes"; // ← 테마 기본 스타일
+
+// ========================
+// ✨ 나만의 커스텀 스타일 시작!
+// ========================
+
+/* ✅ 기본 폰트 커스터마이징 */
+html {
+    font-size: 15px;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  
+  /* 💻 코드 블럭 스타일 */
+  pre.highlight {
+    background: #1e1e1e;
+    color: #dcdcdc;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    font-family: 'Cascadia Code', 'Consolas', monospace;
+    font-size: 0.95rem;
+    overflow-x: auto;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-left: 4px solid #007acc;
+  }
+  
+  code {
+    background: #eee;
+    color: #222;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: 'Cascadia Code', 'Consolas', monospace;
+    font-size: 0.9rem;
+  }
+  
