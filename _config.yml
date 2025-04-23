@@ -110,13 +110,28 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
+# collections 섹션 추가
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# 메뉴(nav) 추가
+nav:
+  - title: "About"
+    url: /about/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+
 
 # Site Author
 author:
   name             : "Juseong"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Python, SQL, Azure 공부중 .. "
-  location         : "Somewhere"
+  location         : "Korea"
   email            :
   links:
     - label: "Email"
@@ -125,18 +140,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: https://github.com/
 
 # Site Footer
 footer:
