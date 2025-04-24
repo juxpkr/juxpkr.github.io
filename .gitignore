@@ -30,3 +30,11 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+# obsidian
+.obsidian/
+_posts/.obsidian/
+_posts/.obsidian/*
+_posts/obsidian/*
+_posts/workspace.json
+_posts/community-plugins.json
