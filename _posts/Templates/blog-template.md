@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "{{title}}"
-date: "{{date}} {{time}}"
+date: "{{date:YYYY-MM-DD}} {{time:HH:mm:ss}} +0900"
 category: 
 tags:
   - 테스트
