@@ -3,10 +3,10 @@ main:
   - title: "Home"
     url: /
   - title: "Learn"
-    url: /categories/Learn
+    url: /learn
   - title: "Projects"
-    url: /categories/projects
+    url: /projects
   - title: "Certifications"
-    url: /categories/certifications
+    url: /certifications
   # - title: "Sitemap"
   #   url: /sitemap/

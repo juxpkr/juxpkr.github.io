@@ -1,8 +1,8 @@
 ---
 layout: posts
-title: 2025-07-01-Azure-Functions
-date: 2025-07-01 16:16:14 +0900
-category: Learn
+title: 2025-06-20-Azure-Functions
+date: 2025-06-20 16:16:14 +0900
+category: learn
 tags:
   - Azure
   - Learn

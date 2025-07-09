@@ -118,12 +118,14 @@ collections:
 
 # 메뉴(nav) 추가
 nav:
-  - title: "About"
-    url: /about/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Home"
+    url: /
+  - title: "Learn"
+    url: /learn/
+  - title: "Projects"
+    url: /projects/
+  - title: "Certifications"
+    url: /certifications/
 
 
 # Site Author
