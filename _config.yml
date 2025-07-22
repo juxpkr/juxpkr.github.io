@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -181,9 +181,9 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
-  - assets/js/plugins
+#  - assets/js/plugins
   - assets/js/_main.js
-  - assets/js/vendor
+#  - assets/js/vendor
   - Capfile
   - CHANGELOG
   - config
@@ -218,6 +218,7 @@ incremental: false
 
 # Markdown Processing
 kramdown:
+  syntax_highlighter: rouge
   input: GFM
   hard_wrap: false
   auto_ids: true
@@ -328,7 +329,17 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
+      date_format: "%Y년 %m월 %d일"
+      show_date: true
       comments: # true
       share: true
       related: true
+
+
+# 사이드바 너비 조정 (선택 사항, 없으면 추가)
+post_sidebar_width: 250px # 포스팅 페이지 사이드바 너비
+page_sidebar_width: 250px # 일반 페이지 사이드바 너비
+sidebar_width: 250px # 모든 사이드바에 적용될 수 있는 일반 너비
+
+enable_lightbox: true

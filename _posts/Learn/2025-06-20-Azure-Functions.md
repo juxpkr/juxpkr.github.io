@@ -1,12 +1,15 @@
 ---
-layout: posts
+layout: single
 title: 2025-06-20-Azure-Functions
 date: 2025-06-20 16:16:14 +0900
-category: learn
+category:
+  - learn
 tags:
   - Azure
   - Learn
   - AzureFunctions
+toc: "true"
+toc_sticky: "true"
 ---
  ### [MicroSoft Data School] Azure Functions : 서버리스 기반의 효율적인데이터 수집 및 파이프라인 트리거
 

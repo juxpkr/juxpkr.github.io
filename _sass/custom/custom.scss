@@ -6,40 +6,279 @@
 
 /* ✅ 기본 폰트 커스터마이징 */
 html {
-    font-size: 15px;
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* 볼드체 강조를 위한 폰트 가중치 설정 */
+strong,
+b {
+  font-weight: 700;
+}
+
+.page__meta {
+  display: flex;
+  /* p.page__meta를 Flex 컨테이너로 만듭니다. */
+  justify-content: flex-end;
+  /* Flex 컨테이너의 자식 요소들을 오른쪽 끝으로 정렬합니다. */
+  align-items: center;
+  /* (선택 사항) 만약 날짜와 다른 요소가 있다면 세로 중앙 정렬 */
+  width: 100%;
+}
+
+
+/* 텍스트 선택 (드래그) 색상 변경 */
+::selection {
+  background-color: #d1e5ff !important;
+  /* 선택 영역 배경색 (하늘색 계열 추천) */
+  color: #333333 !important;
+  /* 선택된 글자색 (진한 회색) */
+}
+
+/* Firefox를 위한 별도 설정 */
+::-moz-selection {
+  background-color: #d1e5ff !important;
+  /* Firefox용 선택 영역 배경색 */
+  color: #333333 !important;
+  /* Firefox용 선택된 글자색 */
+}
+
+/* _sass/custom/_custom.scss */
+
+/* ----- 코드 블록 전체 외곽 박스 (div.highlighter-rouge) 스타일 ----- */
+/* !important를 사용하지 않고도 충분히 높은 우선순위를 가질 수 있도록 작성합니다. */
+div.highlighter-rouge {
+  /* Monokai의 배경색을 좀 더 선명하게 */
+  background-color: #272822;
+  /* Monokai 테마의 표준 배경색 */
+  border-radius: 10px;
+  /* 원하는 곡률 값 */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* 테두리 (약간 밝은 선으로 구분) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  /* 그림자 (좀 더 진하게) */
+  overflow: hidden;
+  /* 내부 콘텐츠가 곡률 밖으로 나가지 않도록 */
+  margin-bottom: 1em;
+  /* 하단 여백 유지 */
+}
+
+/* ----- 캡션 (파일명) 스타일 ----- */
+/* 캡션 기능 사용 시에만 필요합니다. */
+.highlight figcaption {
+  background-color: #383830;
+  /* Monokai 캡션 배경색 ($base01) */
+  color: #f8f8f2;
+  /* Monokai 캡션 글자색 ($base05) */
+  padding: 0.5em 1em;
+  border-top-left-radius: 10px;
+  /* 바깥 박스의 상단 곡률과 통일 */
+  border-top-right-radius: 10px;
+  /* 바깥 박스의 상단 곡률과 통일 */
+  border-bottom: 1px solid #49483e;
+  /* Monokai 색상과 어울리는 테두리 ($base02) */
+  font-family: monospace;
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+/* ----- 코드 내용 컨테이너 (pre) 스타일 ----- */
+/* rouge-monokai.css와 충돌하지 않으면서 공통 스타일 적용 */
+.highlight pre {
+  /* background-color: inherit; */
+  /* rouge-monokai.css에 이미 정의되어 있을 수 있음 */
+  /* border-radius: inherit; */
+  /* div.highlighter-rouge에서 overflow: hidden 처리로 충분 */
+  padding: 1em;
+  /* 코드 내용 자체의 여백 */
+  margin-bottom: 0;
+  line-height: 1.6;
+  /* 가독성을 위해 줄 간격 조정 */
+  font-size: 0.95em;
+  /* 폰트 크기 조정 */
+  overflow-x: auto;
+  /* 가로 스크롤 필요 시 자동 생성 */
+}
+
+/* ----- 코드 텍스트 (code) 스타일 ----- */
+/* 폰트 패밀리, 기본 글자색 (rouge-monokai.css에 의해 덮어씌워질 것) */
+.highlight code {
+  /* font-family: 'Cascadia Code', 'Consolas', monospace; */
+  /* 원하는 폰트 패밀리 */
+  /* color: #f8f8f2; */
+  /* 기본 글자색 (Monokai의 $base05) */
+}
+
+/* ----- 코드 블록 주석 색상 변경 ----- */
+/* .highlight .c, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs는 
+   rouge 하이라이터가 주석에 부여하는 클래스들입니다. */
+.highlight .c,
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs {
+  color: #92e6e6 !important;
+  /* 주석 색상 변경: 밝은 청록색 계열 (예시) */
+  /* 또는 원하는 다른 밝은 색상:
+     #50fa7b !important;  (Dracula 테마의 초록색 주석)
+     #888888 !important;  (중간 회색)
+     #aaaaaa !important;  (밝은 회색)
+  */
+}
+
+
+
+
+/* _sass/custom/_custom.scss */
+
+/* ----- 목차(Table of Contents) 최상위 컨테이너 (.sidebar__right) 스타일 ----- */
+/* 박스는 투명하게 유지, 위치를 그리드/플렉스 컨테이너 안에서 조정 */
+.sidebar__right {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin-top: 2em !important;
+
+
+  /* Minimal Mistakes 기본 CSS를 존중하며, 간격만 벌리는 시도 */
+  /* 목차 자체의 왼쪽 여백을 늘려 오른쪽으로 밀어냅니다. */
+  /* 화면 크기에 따라 이 값이 너무 커질 수도 있으므로 @media 쿼리 안에서 사용 권장 */
+  @media screen and (min-width: 960px) {
+    margin-left: 2em !important;
+    /* 본문과 목차 사이의 간격 (조정 가능) */
+    width: 250px !important;
+    /* 목차 너비 고정 (_config.yml과 동일하게) */
+    /* 만약 이 설정으로도 안 되면, 테마의 _page.scss나 _layout.scss 등을 오버라이드하여
+       .page__inner-wrap의 display: grid/flex 및 gap 속성 조정 필요 */
   }
-  
-  body {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 400;
-    line-height: 1.8;
-  }
-  /* 볼드체 강조를 위한 폰트 가중치 설정 */
-  strong, b {
-    font-weight: 700; 
-  }
-  
-  /* 💻 코드 블럭 스타일 */
-  pre.highlight {
-    background: #1e1e1e;
-    color: #dcdcdc;
-    padding: 1rem 1.2rem;
-    border-radius: 8px;
-    font-family: 'Cascadia Code', 'Consolas', monospace;
-    font-size: 0.95rem;
-    overflow-x: auto;
-    line-height: 1.6;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    border-left: 4px solid #007acc;
-  }
-  
-  code {
-    background: #eee;
-    color: #222;
-    padding: 3px 6px;
-    border-radius: 4px;
-    font-family: 'Cascadia Code', 'Consolas', monospace;
-    font-size: 0.9rem;
-  }
-  
+
+  overflow-y: auto !important;
+  max-height: calc(100vh - 100px) !important;
+}
+
+
+/* ----- 목차 제목 (h4.nav__title) 삭제 (이전 그대로 유지) ----- */
+.sidebar__right .nav__title {
+  display: none !important;
+}
+
+
+/* ----- 목차 리스트 스타일 (이전과 동일, 깔끔하게) ----- */
+.sidebar__right .toc_menu {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.sidebar__right .toc_menu li {
+  margin-bottom: 0.5em !important;
+
+}
+
+
+.sidebar__right .toc_menu li a {
+  color: #333 !important;
+  /* 링크 글자색: 진한 회색 (선명하게) */
+  font-size: 1.0em !important;
+  /* 글자 크기 키움 (0.95em -> 1.0em) */
+  font-weight: normal !important;
+  /* BOLD 제거: 선택되지 않은 항목은 BOLD 아님 */
+  line-height: 1.5 !important;
+  padding: 0.3em 0 !important;
+  display: block !important;
+  text-decoration: none !important;
+  text-align: left !important;
+  border-bottom: none !important;
+  /* 밑줄 제거 (이전 그대로 유지) */
+  background-color: transparent !important;
+  /* 배경색 제거 (박스 형태 방지) */
+  border-radius: 0 !important;
+  /* 곡률 제거 (박스 형태 방지) */
+}
+
+/* 활성화된 목차 링크 스타일 */
+.sidebar__right .toc_menu li a.active {
+  color: #007bff !important;
+  /* 활성화된 링크 색상 (파란색) */
+  font-weight: bold !important;
+  /* BOLD 처리 */
+  background-color: transparent !important;
+  /* 활성화 시 배경색 제거 (박스 형태 방지) */
+  border-radius: 0 !important;
+  /* 활성화 시 곡률 제거 (박스 형태 방지) */
+  text-decoration: none !important;
+  /* 혹시 모를 밑줄 방지 */
+}
+
+/* 서브 목차 들여쓰기 */
+.sidebar__right .toc_menu ul {
+  margin-left: 1em !important;
+  border-left: 2px solid #e0e0e0 !important;
+  padding-left: 0.5em !important;
+  margin-top: 0.5em !important;
+  padding-top: 0.2em !important;
+}
+
+.sidebar__right nav.toc {
+  /* .sidebar__right와 nav.toc을 함께 지정하여 특정성을 높입니다. */
+  background-color: transparent !important;
+  /* 배경색: 투명 */
+  border: none !important;
+  /* 테두리 제거 */
+  box-shadow: none !important;
+  /* 그림자 제거 */
+  border-radius: 0 !important;
+  /* 곡률 제거 */
+  padding: 0 !important;
+  /* 내부 패딩 제거 */
+  margin: 0 !important;
+  /* 외부 마진 제거 */
+}
+
+.toc__menu a {
+  /* 이 셀렉터는 _navigation.scss에 있는 셀렉터와 동일합니다. */
+  border-bottom: none !important;
+  /* 밑줄을 완전히 제거 */
+}
+
+/* 만약을 위해 li에도 추가 (불필요할 수도 있음) */
+.toc__menu li {
+  border-bottom: none !important;
+}
+
+
+/* ----- 이미지 크기 조정 (가장 강력한 오버라이드) ----- */
+/* .page__content 안에 있는 모든 이미지에 적용됩니다. */
+.page__content img {
+  width: auto !important;
+  /* 너비를 자동으로 설정하여 원본 비율 유지 */
+  max-width: 100% !important;
+  /* 부모 컨테이너의 100%를 넘지 않도록 최대 너비 설정 */
+  height: auto !important;
+  /* 높이는 비율에 맞춰 자동으로 조절 */
+
+  display: block !important;
+  /* 이미지를 블록 요소로 만들어 줄바꿈 및 중앙 정렬 용이하게 함 */
+  margin-left: auto !important;
+  /* 가운데 정렬 */
+  margin-right: auto !important;
+
+  border-radius: 4px !important;
+  /* 이미지 모서리를 약간 둥글게 (선택 사항) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* 은은한 그림자 추가 (선택 사항) */
+}
+
+.page__content p img {
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+}

@@ -1,11 +1,14 @@
 ---
-layout: posts
+layout: single
 title: " Azure Event Hubs: 대규모 실시간 데이터 스트리밍의 핵심 허브"
 date: 2025-06-23 21:02:21 +0900
-category: learn
+category:
+  - learn
 tags:
   - 테스트
   - 블로그
+toc: "true"
+toc_sticky: "true"
 ---
  **Azure Event Hubs: 대규모 실시간 데이터 스트리밍의 핵심 허브**
 
