@@ -67,9 +67,11 @@ Databricks 환경에서는 `SparkSession` 객체가 `spark`라는 이름으로 �
 
 ![](/assets/images/posts/2025-06-05-Databricks-7.png)
 
+![](/assets/images/posts/2025-06-05-Databricks-12.png)
+
 ![](/assets/images/posts/2025-06-05-Databricks-8.png)
 
-
+![](/assets/images/posts/2025-06-05-Databricks-13.png)
 ![](/assets/images/posts/2025-06-05-Databricks-9.png)
 
 
