@@ -39,7 +39,7 @@ Databricks는 Apache Spark 기반의 **통합 분석 플랫폼(Unified Analytics
 - **확장성 및 효율성**: 필요에 따라 클러스터 크기를 유연하게 조절하여, 대규모 데이터 처리 작업을 효율적으로 수행하고 비용을 최적화할 수 있다.
     
 
-![](2025-06-05-Databricks-2.png)
+![](/assets/images/posts/2025-06-05-Databricks-2.png)
 
 ---
 
@@ -53,31 +53,31 @@ PySpark의 강력함을 온전히 활용하려면 몇 가지 핵심 개념을 �
 
 Databricks 환경에서는 `SparkSession` 객체가 `spark`라는 이름으로 자동으로 생성되어 제공된다. 따라서 별도의 설정 없이 바로 PySpark 코드를 시작할 수 있다.
 
-![](2025-06-05-Databricks-4.png)
+![](/assets/images/posts/2025-06-05-Databricks-4.png)
 
 
 
-![](2025-06-05-Databricks-5.png)
+![](/assets/images/posts/2025-06-05-Databricks-5.png)
 
 
-![](2025-06-05-Databricks-6.png)
-
-
-
-
-![](2025-06-05-Databricks-7.png)
-
-![](2025-06-05-Databricks-8.png)
-
-
-![](2025-06-05-Databricks-9.png)
+![](/assets/images/posts/2025-06-05-Databricks-6.png)
 
 
 
 
-![](2025-06-05-Databricks-10.png)
+![](/assets/images/posts/2025-06-05-Databricks-7.png)
 
-![](2025-06-05-Databricks-11.png)
+![](/assets/images/posts/2025-06-05-Databricks-8.png)
+
+
+![](/assets/images/posts/2025-06-05-Databricks-9.png)
+
+
+
+
+![](/assets/images/posts/2025-06-05-Databricks-10.png)
+
+![](/assets/images/posts/2025-06-05-Databricks-11.png)
 
 
 
