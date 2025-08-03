@@ -96,8 +96,7 @@ Databricks 환경에서는 `SparkSession` 객체가 `spark`라는 이름으로 �
 
 ## 5. 결론 : PySpark와 Databricks의 이해
 
-이 포스팅을 통해 Python의 Pandas가 가진 단일 머신 환경의 한계를 이해했다. 그리고 대규모 데이터 처리의 필요성에 따라 Apache Spark와 그 Python API인 PySpark의 중요성을 파악했다. 또한, 클라우드 기반에서 PySpark를 가장 효율적으로 다룰 수 있는 통합 분석 플랫폼인 Databricks의 가치를 확인했다.
-
-`SparkSession`, `DataFrame`, 카탈리스트 옵티마이저 와 같은 PySpark의 핵심 개념들이 어떻게 분산 환경에서 대규모 데이터를 처리하는지 원리적으로 이해했다. 나아가, Databricks 노트북 환경에서 데이터를 로드하고, `select`, `filter`, `withColumn`, `join`, `groupBy`와 같은 PySpark의 다양한 변환 메서드를 사용하여 데이터 정제, 변환, 통합, 집계 등 실제 데이터 전처리 작업을 수행했다. `Window 함수`를 활용한 최신 데이터 선별이나 `coalesce`를 통한 결측치 처리와 같이 데이터 품질을 확보하는 중요한 작업들도 직접 다루었다.
+이 포스팅을 통해 `Python`의 `Pandas`가 가진 단일 머신 환경의 한계를 이해했다. 그리고 대규모 데이터 처리의 필요성에 따라 `Apache Spark`와 그 `Python` API인 `PySpark`의 중요성을 파악했다. 또한, 클라우드 기반에서 `PySpark`를 가장 효율적으로 다룰 수 있는 통합 분석 플랫폼인 `Databricks`의 가치를 확인했다.
+또, `SparkSession`, `DataFrame`, 카탈리스트 옵티마이저 와 같은 `PySpark`의 핵심 개념들이 어떻게 분산 환경에서 대규모 데이터를 처리하는지 원리적으로 이해했다. 나아가, `Databricks` 노트북 환경에서 데이터를 로드하고, `select`, `filter`, `withColumn`, `join`, `groupBy`와 같은 `PySpark`의 다양한 변환 메서드를 사용하여 데이터 정제, 변환, 통합, 집계 등 실제 데이터 전처리 작업을 수행했다. `Window 함수`를 활용한 최신 데이터 선별이나 `coalesce`를 통한 결측치 처리와 같이 데이터 품질을 확보하는 중요한 작업들도 직접 다루었다.
 
 이러한 학습 경험은 데이터의 '규모'에 짓눌리지 않고, 데이터를 정제하고 변환하며 분석 가능한 형태로 제공하는 데이터 엔지니어의 핵심 역량을 강화하는 데 기여했다. PySpark와 Databricks에 대한 이해는 향후 더 복잡한 데이터 파이프라인을 설계하고 구축하는 데 든든한 기반이 될 것이다. 이 지식과 경험은 데이터 엔지니어로서 실무 문제 해결에 기여할 수 있는 나의 역량을 명확히 보여준다.
