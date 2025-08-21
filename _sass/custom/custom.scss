@@ -282,3 +282,74 @@ div.highlighter-rouge {
   max-width: 100% !important;
   height: auto !important;
 }
+
+/* --- Minimal Mistakes 테마 맞춤형 시리즈 박스 CSS (Final Ver.) --- */
+
+.series-box {
+  /* 상자 형태를 벗어나 본문과 자연스럽게 어울리도록 디자인 */
+  background-color: transparent;
+  /* 배경색 제거 */
+  border-left: 3px solid #49a5e6;
+  /* 테마의 링크 색상(혹은 원하는 강조색)으로 좌측에만 포인트 */
+  padding: 1.5em 2em;
+  margin: 40px 0;
+  /* 이전의 그림자, 테두리, 배경색 모두 제거하여 미니멀하게 */
+}
+
+.series-box h4 {
+  /* 아이콘을 추가하여 시각적 완성도를 높임 */
+  font-size: 1.2em;
+  font-weight: 700;
+  /* 제목 폰트를 더 굵게 하여 강조 */
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  /* 목록과의 여백을 늘림 */
+  /* 이전의 밑줄 제거 */
+  border-bottom: none;
+}
+
+/* Font Awesome 아이콘 추가 (목록 아이콘) */
+.series-box h4:before {
+  font-family: "Font Awesome 5 Free";
+  /* Minimal Mistakes 테마가 사용하는 아이콘 폰트 */
+  font-weight: 900;
+  content: "\f022";
+  /* 목록(list-alt) 아이콘 코드 */
+  margin-right: 0.7em;
+  color: #49a5e6;
+  /* 아이콘 색상을 좌측 테두리와 통일 */
+}
+
+.series-box ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.series-box ul li {
+  padding: 0.5em 0;
+  font-size: 1em;
+  /* 항목 간 구분선 제거하여 깔끔하게 */
+  border-bottom: none;
+}
+
+/* 현재 글씨 강조 스타일 */
+.series-box ul li strong {
+  color: #000;
+  font-weight: 700;
+  /* 현재 글씨를 더 굵게 */
+}
+
+/* 링크 스타일 */
+.series-box ul li a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+/* 마우스를 올렸을 때의 링크 스타일 */
+.series-box ul li a:hover {
+  color: #49a5e6;
+  /* 강조 색상과 통일 */
+}

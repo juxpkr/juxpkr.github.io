@@ -1,26 +1,7 @@
 ---
 layout: archive
 ---
-{% raw %}
-{% if page.series %}
-<div class="series-box">
-  <h4>'{{ page.series }}' 시리즈의 다른 글들</h4>
-  <ul>
-    {% for post in site.posts %}
-    {% if post.series == page.series %}
-    <li>
-      {% if post.url == page.url %}
-      <strong>{{ post.title }} (현재 글)</strong>
-      {% else %}
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      {% endif %}
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
-{% endraw %}
+
 {{ content }}
 
 <ul class="taxonomy__index">
